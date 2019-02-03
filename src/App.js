@@ -1,28 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import AutocompleteDemo from './demos/AutocompleteDemo';
+import ModalDemo from './demos/ModalDemo';
+import Button from '@thawkin3/react-component-library/dist/Button';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <header className="App-header">
+                    <h1>react-components</h1>
+                    <p>Reusable Components for React</p>
+                </header>
+                <main>
+                    <AutocompleteDemo />
+                    <ModalDemo />
+                    <h2>Button from @thawkin3/react-component-library</h2>
+                    <Button clickHandler={() => { alert('You clicked me!'); }}>
+                        Click me to be alerted
+                    </Button>
+                </main>
+            </div>
+        );
+    }
 }
 
 export default App;

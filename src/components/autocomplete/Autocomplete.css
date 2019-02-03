@@ -1,0 +1,42 @@
+.autocomplete-container {
+    position: relative;
+}
+
+.autocomplete-label {
+    display: block;
+}
+
+.autocomplete-input {
+    display: block;
+}
+
+.autocomplete-results-container {
+    max-height: 200px;
+    cursor: default;
+    list-style-type: none;
+    padding: 0;
+    border: 1px solid #999;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.65);
+    width: 100%;
+    z-index: 1;
+    overflow: scroll;
+}
+.autocomplete-results-container .autocomplete-list-item {
+    border-bottom: 1px dotted #efefef;
+}
+
+.autocomplete-results-container .autocomplete-list-item a,
+.autocomplete-results-container .autocomplete-list-item button {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.autocomplete-results-container .autocomplete-list-item a:hover,
+.autocomplete-results-container .autocomplete-list-item a:focus,
+.autocomplete-results-container .autocomplete-list-item button:hover,
+.autocomplete-results-container .autocomplete-list-item button:focus {
+    background: #ccc;
+    color: #fff;
+}
